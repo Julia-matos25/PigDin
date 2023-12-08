@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PigDin</title>
+
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/img/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login {
+        width: 428px;
+        height: 926px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50px;
+      }
+
+      .title {
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+      }
+
+      .welcome-container {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 22px;
+      }
+
+      .login-cadastro {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+      }
+
+      .login-form {
+        width: 100%;
+      }
+
+      .login form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+      }
+
+      .login label {
+        color: #fff;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      .login input[type="text"],
+      .login input[type="password"] {
+        border: none;
+        border-bottom: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 10px;
+        margin-top: 10px;
+        transition: background 0.3s, border-bottom 0.3s, color 0.3s;
+      }
+
+      .login input[type="text"]:hover,
+      .login input[type="password"]:hover,
+      .login input[type="text"]:focus,
+      .login input[type="password"]:focus {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .login input[type="text"]:focus,
+      .login input[type="password"]:focus {
+        border-bottom: 2px solid #81a2e4;
+        color: #ffffff;
+      }
+
+      .input::placeholder {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .login input[type="text"],
+      .login input[type="password"] {
+        border: none;
+        border-bottom: 2px solid #fff;
+      }
+
+      .button-acessar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 55px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #fff;
+        border: #fff;
+        color: #81a2e4;
+        font-family: Roboto;
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .login-form-cadastrar {
+        display: block;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      .login input,
+      .login span {
+        height: 45px;
+        color: #fff;
+        font-size: 20px;
+        display: block;
+        border-bottom: 3px solid #fff;
+        margin-top: 10px;
+      }
+
+      .login span {
+        background: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login-cadastro">
+      <div class="login">
+        <div>
+          <img class="img-pig" src="../img/PigDin.svg" alt="logo" />
+          <div>
+            <h1 class="title">PigDin</h1>
+          </div>
+        </div>
+        <div class="login-form">
+          <form>
+            <p class="welcome-container">Olá, seja bem-vindo!</p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" />
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="Senha" />
+          </form>
+          <a class="button-acessar" href="acesso.html">Acessar Conta</a>
+          <a class="login-form-cadastrar" href="cadastro.html"
+            >Quero me cadastrar</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

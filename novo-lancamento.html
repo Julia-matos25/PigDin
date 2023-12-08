@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo lançamento</title>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #8191e4;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-pig {
+      width: 150px;
+    }
+
+    .icon-sobre {
+      width: 25px;
+      height: 25px;
+      flex-shrink: 0;
+      fill: #fff;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .seu-saldo {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-right: 300px;
+    }
+
+    .line {
+      width: 388px;
+      height: 2px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .valor-saldo {
+      color: #fff;
+      font-family: Roboto;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .acesso-lancamentos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 922px;
+      height: 644px;
+      margin-top: auto;
+      border-radius: 20px 20px 0px 0px;
+      background: #fff;
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .texto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #808080;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+
+    .bloco {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 882px;
+      height: 69px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: #f2f4fb;
+      box-shadow: 0px -2px 1px 0px rgba(255, 26, 26, 0.25) inset;
+      margin-top: 10px;
+    }
+
+    .bloco-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 882px;
+      height: 69px;
+      flex-shrink: 0;
+      border-radius: 20px;
+      background: #f2f4fb;
+      box-shadow: 0px -2px 1px 0px #51f676 inset;
+      margin-top: 10px;
+    }
+
+    .titulo {
+      width: 125px;
+      height: 22px;
+      flex-shrink: 0;
+      color: #636363;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .custo {
+      width: 130px;
+      height: 22px;
+      flex-shrink: 0;
+      color: #f65151;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .data {
+      width: 185px;
+      height: 22px;
+      flex-shrink: 0;
+      color: #636363;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .icon-container img {
+      width: 20px;
+    }
+
+    .button {
+      width: 388px;
+      height: 45px;
+      flex-shrink: 0;
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+    .line-2{
+        width: 1px;
+height: 29px;
+background: #CDCDCD;
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 50px;
+      background: #8191e4;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <img class="icon-pig" src="../img/PigDin.svg" alt="" />
+      <img class="icon-sobre" src="../img/Sobre.svg" alt="" />
+      <p class="seu-saldo">Seu saldo:</p>
+      <div class="valor-saldo">R$ 423,11</div>
+      <p class="line"></p>
+    </div>
+
+    <section class="acesso-lancamentos">
+      <div class="icon-container"></div>
+
+      <div class="texto">
+        <p>Título</p>
+        <p>Custo</p>
+        <p>Data</p>
+      </div>
+      <div class="bloco">
+        <p class="titulo">Coxinha</p>
+        <p class="custo">-R$ 3,50</p>
+        <p class="data">16/05/2021</p>
+        <img src="/img/Editar.svg" alt="" />
+        <p class="line-2"></p>
+        <img src="/img/delete.png" alt="" />
+      </div>
+      <div class="bloco">
+        <p class="titulo">Netflix</p>
+        <p class="custo">-R$ 39,90</p>
+        <p class="data">05/05/2021</p>
+        <img src="/img/Editar.svg" alt="" />
+        <p class="line-2"></p>
+        <img src="/img/delete.png" alt="" />
+      </div>
+      <div class="bloco">
+        <p class="titulo">Mercado</p>
+        <p class="custo">-R$ 18,49</p>
+        <p class="data">28/02/2021</p>
+        <img src="/img/Editar.svg" alt="" />
+        <p class="line-2"></p>
+        <img src="/img/delete.png" alt="" />
+      </div>
+      <div class="bloco-2">
+        <p class="titulo">Venda do Pocket</p>
+        <p class="custo">-R$ 485,00</p>
+        <p class="data">18/02/2021</p>
+        <img src="/img/Editar.svg" alt="" />
+        <p class="line-2"></p>
+        <img src="/img/delete.png" alt="" />
+      </div>
+
+      <div class="button">
+        <a href="lancamento.html"><button>Novo Lançamento</button> </a>
+      </div>
+    </section>
+  </body>
+</html>

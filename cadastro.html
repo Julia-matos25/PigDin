@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro PigDin</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        background-image: url("../img/Background.png");
+        background-size: cover;
+        text-align: center;
+      }
+
+      .cadastro {
+        width: 428px;
+        height: 926px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50px;
+      }
+
+      .logo {
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+
+      .welcome-container {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 22px;
+      }
+      .login-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 34px;
+        padding-top: 35px;
+      }
+
+      .login-form form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .login-form label {
+        color: #fff;
+        margin-top: 10px;
+        font-size: 20px;
+        align-self: flex-start;
+        text-align: left;
+      }
+
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 18px;
+        padding: 8px 10px;
+        transition: background 0.3s, border-bottom 0.3s, color 0.3s;
+      }
+
+      .login-form input[type="text"]:hover,
+      .login-form input[type="password"]:hover,
+      .login-form input[type="text"]:focus,
+      .login-form input[type="password"]:focus {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .login-form input[type="text"]:focus,
+      .login-form input[type="password"]:focus {
+        border-bottom: 2px solid #81a2e4;
+        color: #ffffff;
+      }
+
+      .login-form input::placeholder {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .button-acessar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 55px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #fff;
+        color: #81a2e4;
+        font-family: Roboto;
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .cancelar {
+        text-align: center;
+        color: #ffffff;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cadastro">
+      <img src="/img/PigDin.svg" alt="" />
+      <h1 class="logo">PigDin</h1>
+      <p class="welcome-container">Olá, seja bem-vindo!</p>
+
+      <div class="login-form">
+        <form method="post">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="Nome" />
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="Email" />
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="Senha" />
+          <label for="confirmSenha">Confirmar senha:</label>
+          <input type="password" id="confirmSenha" name="ConfirmarSenha" />
+        </form>
+        <div>
+          <a class="button-acessar" href="acesso.html">Criar Conta</a>
+          <a class="cancelar" href="login.html">Cancelar</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
